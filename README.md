@@ -1,23 +1,21 @@
-# 🏁 Deno Starter
+# 🙃 Invert KV
 
-Simply recursively read a directory in Deno.
+Simple utility to invert the key-value pairs in an object.
 
 ```ts
-import { mode } from "https://raw.githubusercontent.com/denorg/starter/master/mod.ts";
+import { invert } from "https://raw.githubusercontent.com/denorg/invert-kv/master/mod.ts";
 
-const result = mode();
+const obj = { hello: "world" };
+
+const result = invert(); // { world: "hello" }
 ```
-
-Required permissions:
-
-1. `--allow-read`
 
 ## 👩‍💻 Development
 
 Run tests:
 
 ```bash
-deno test --allow-read
+deno test
 ```
 
 ## 📄 License
