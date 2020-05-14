@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { mode } from "./mod.ts";
+import { invert } from "./mod.ts";
 
-Deno.test("test starter function", async (): Promise<void> => {
-  assertEquals(mode(), 0);
+Deno.test("invert", async (): Promise<void> => {
+  assertEquals(invert({ hello: "world" }), { world: "hello" });
 });
